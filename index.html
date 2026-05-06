@@ -543,5 +543,26 @@ const ws = document.getElementById("wish");
   ws.appendChild(h);
 });
 </script>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBc4bl4nbdCXjY6KgWFDQQ6ttVhhqwIhXw",
+    authDomain: "birthday-site-79b97.firebaseapp.com",
+    databaseURL: "https://birthday-site-79b97-default-rtdb.firebaseio.com",
+    projectId: "birthday-site-79b97",
+    storageBucket: "birthday-site-79b97.firebasestorage.app",
+    messagingSenderId: "1074285829572",
+    appId: "1:1074285829572:web:e4d4018dd1acc839399891",
+    measurementId: "G-G1YM5W82YY"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+  console.log("🔥 Firebase Connected");
+</script>
+
 </body>
 </html>
