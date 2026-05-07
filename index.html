@@ -436,7 +436,7 @@ mBtn.onclick = () => {
 };
 
 function renderSite() {
-  document.getElementById("hero-name").textContent  = siteData.name || "জন্মদিন মুবারক";
+  document.getElementById("hero-name").textContent  = siteData.name || "HAPPY  BIRTHDAY Bow";
   document.getElementById("hero-sub").textContent   = siteData.sub;
   document.getElementById("wish-text").innerHTML    = (siteData.wish||"").replace(/\n/g,"<br>");
   document.getElementById("wish-sign").textContent  = siteData.sign;
@@ -515,7 +515,7 @@ function addPhotoEntry(p={}) {
 }
 
 function applyAdmin() {
-  siteData.name       = document.getElementById("adm-name").value.trim() || "জন্মদিন মুবারক";
+  siteData.name       = document.getElementById("adm-name").value.trim() || "HAPPY  BIRTHDAY Bow";
   siteData.sign       = document.getElementById("adm-sign").value.trim();
   siteData.sub        = document.getElementById("adm-sub").value.trim();
   siteData.wish       = document.getElementById("adm-wish").value.trim();
