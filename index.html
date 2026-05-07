@@ -503,14 +503,7 @@ function addStoryEntry(s={}) {
   sa.appendChild(div);
 }
 
-function handlePhotoUpload(input) {
-  [...input.files].forEach(file => {
-    const r = new FileReader();
-    r.onload = e => addPhotoEntry({ url: e.target.result, caption: file.name.replace(/\.[^.]+$/,"") });
-    r.readAsDataURL(file);
-  });
-  input.value = "";
-}
+
 
 function addPhotoEntry(p={}) {
   const pa=document.getElementById("photos-admin");
